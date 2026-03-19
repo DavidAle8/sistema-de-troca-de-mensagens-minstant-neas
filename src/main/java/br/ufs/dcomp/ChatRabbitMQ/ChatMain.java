@@ -1,24 +1,22 @@
 package br.ufs.dcomp.ChatRabbitMQ;
-
 import java.util.Scanner;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 
+import io.github.cdimascio.dotenv.Dotenv;
+
 public class ChatMain {
 
     public static void main(String[] argv) throws Exception {
         
         ConnectionFactory factory = new ConnectionFactory();
-        // factory.setHost("shark-01.rmq.cloudamqp.com");
-        // factory.setUsername("jwpauneq:jwpauneq");
-        // factory.setPassword("FY1tTGNmLVBoQfwlMiBl2z_Pc5AIaNS6");
-        // factory.setVirtualHost("jwpauneq");
-        // factory.setPort(5671); // foi necessário adicionar essa parte
-        // factory.useSslProtocol();  // foi necessário adicionar essa parte
+        
+        Dotenv dotenv = Dotenv.load();
+        String uri = dotenv.get("URI_STRING");
 
-        factory.setUri("amqps://jwpauneq:FY1tTGNmLVBoQfwlMiBl2z_Pc5AIaNS6@shark.rmq.cloudamqp.com/jwpauneq");
+        factory.setUri(uri);
 
         Connection connection = factory.newConnection();
         Channel channelMessage = connection.createChannel();
@@ -56,7 +54,7 @@ public class ChatMain {
         }
         
         System.out.println("");
- 
+
         // Já é a thread de consume de mensagens e upload.
         ThreadConsumeMessage consumeMessage = new ThreadConsumeMessage(channelMessage, source_queue_name);
         consumeMessage.start();

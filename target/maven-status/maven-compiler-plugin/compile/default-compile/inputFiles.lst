@@ -1,8 +1,8 @@
-C:\Users\David Alessandro\Documents\Meus códigos\sistema-de-troca-de-mensagens-minstant-neas-grupo-m-2025-2\src\main\java\br\ufs\dcomp\ChatRabbitMQ\ThreadConsumeMessage.java
-C:\Users\David Alessandro\Documents\Meus códigos\sistema-de-troca-de-mensagens-minstant-neas-grupo-m-2025-2\src\main\java\br\ufs\dcomp\ChatRabbitMQ\ChatSerializer.java
-C:\Users\David Alessandro\Documents\Meus códigos\sistema-de-troca-de-mensagens-minstant-neas-grupo-m-2025-2\src\main\java\br\ufs\dcomp\ChatRabbitMQ\ThreadSend.java
-C:\Users\David Alessandro\Documents\Meus códigos\sistema-de-troca-de-mensagens-minstant-neas-grupo-m-2025-2\src\main\java\br\ufs\dcomp\ChatRabbitMQ\Binding.java
-C:\Users\David Alessandro\Documents\Meus códigos\sistema-de-troca-de-mensagens-minstant-neas-grupo-m-2025-2\src\main\java\br\ufs\dcomp\ChatRabbitMQ\ChatMain.java
-C:\Users\David Alessandro\Documents\Meus códigos\sistema-de-troca-de-mensagens-minstant-neas-grupo-m-2025-2\src\main\java\br\ufs\dcomp\ChatRabbitMQ\Rest.java
-C:\Users\David Alessandro\Documents\Meus códigos\sistema-de-troca-de-mensagens-minstant-neas-grupo-m-2025-2\src\main\java\br\ufs\dcomp\ChatRabbitMQ\ThreadConsumeUpload.java
-C:\Users\David Alessandro\Documents\Meus códigos\sistema-de-troca-de-mensagens-minstant-neas-grupo-m-2025-2\src\main\java\br\ufs\dcomp\ChatRabbitMQ\MensagemProto.java
+C:\Users\David Alessandro\Documents\GitHub\sistema-de-troca-de-mensagens-minstant-neas\src\main\java\br\ufs\dcomp\ChatRabbitMQ\ThreadConsumeMessage.java
+C:\Users\David Alessandro\Documents\GitHub\sistema-de-troca-de-mensagens-minstant-neas\src\main\java\br\ufs\dcomp\ChatRabbitMQ\ThreadSend.java
+C:\Users\David Alessandro\Documents\GitHub\sistema-de-troca-de-mensagens-minstant-neas\src\main\java\br\ufs\dcomp\ChatRabbitMQ\ChatMain.java
+C:\Users\David Alessandro\Documents\GitHub\sistema-de-troca-de-mensagens-minstant-neas\src\main\java\br\ufs\dcomp\ChatRabbitMQ\Binding.java
+C:\Users\David Alessandro\Documents\GitHub\sistema-de-troca-de-mensagens-minstant-neas\src\main\java\br\ufs\dcomp\ChatRabbitMQ\ThreadConsumeUpload.java
+C:\Users\David Alessandro\Documents\GitHub\sistema-de-troca-de-mensagens-minstant-neas\src\main\java\br\ufs\dcomp\ChatRabbitMQ\MensagemProto.java
+C:\Users\David Alessandro\Documents\GitHub\sistema-de-troca-de-mensagens-minstant-neas\src\main\java\br\ufs\dcomp\ChatRabbitMQ\ChatSerializer.java
+C:\Users\David Alessandro\Documents\GitHub\sistema-de-troca-de-mensagens-minstant-neas\src\main\java\br\ufs\dcomp\ChatRabbitMQ\Rest.java

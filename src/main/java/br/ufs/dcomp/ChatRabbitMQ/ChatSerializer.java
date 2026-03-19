@@ -17,18 +17,17 @@ import com.rabbitmq.client.Consumer;
 import com.rabbitmq.client.DefaultConsumer;
 import com.rabbitmq.client.Envelope;
 
+import io.github.cdimascio.dotenv.Dotenv;
+
 
     public class ChatSerializer{
         
         public static void listUsersOfGroup(String group) {
 
-            //String VHOST = "%2Fjwpauneq";
-            String VHOST = "jwpauneq";
+            Dotenv dotenv = Dotenv.load();
+            String vhost = dotenv.get("VHOST");
+            String VHOST = vhost;
             String exchange = "MS_" + group;
-
-            // LISTAR USUARIOS DE UM GRUPO PASSADO:
-            // !listUsers ufs
-            // Resultado: tarcisio, marcio, favio, monica
 
             try {
                 
@@ -62,8 +61,10 @@ import com.rabbitmq.client.Envelope;
 
         public static void listGroupsOfUser(String user) {
 
-            //String VHOST = "%2Fjwpauneq";
-            String VHOST = "jwpauneq"; 
+            Dotenv dotenv = Dotenv.load();
+            String vhost = dotenv.get("VHOST");
+
+            String VHOST = vhost; 
             String queue = "MS_" + user;
             
             // LISTAR OS GRUPOS QUE O USUARIO LOGADO ESTÁ
